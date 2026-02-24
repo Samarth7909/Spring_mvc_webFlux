@@ -1,0 +1,36 @@
+include 'bookstore-shared'
+include 'bookstore-mvc-shared'
+include '1-mvc-bookstore'
+include '1-bookstore'
+include '2-bookstore'
+include '2-samples'
+include '5-bookstore'
+include '6-bookstore'
+include '7-bookstore'
+include '8-bookstore'
+include '9-2-bookstore'
+include '9-3-bookstore'
+include '9-1-bookstore-no-boot'
+include '10-1-bookstore'
+include '10-2-bookstore'
+include '10-3-bookstore'
+include '11-1-bookstore'
+include '11-2-bookstore'
+include '11-3-server-bookstore'
+include '11-3-client-bookstore'
+include '11-4-bookstore'
+include '12-mvc-bookstore'
+include '12-bookstore'
+include '13-discovery-service'
+include '13-technews-service'
+include '13-newreleases-service'
+include '13-account-service'
+include '13-presentation-service'
+include '13-book-service'
+
+rootProject.name = 'Spring MVC and WebFlux'
+rootProject.children.each {project ->
+	project.buildFileName = "${project.name}.gradle"
+}
+
+
